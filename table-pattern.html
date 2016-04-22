@@ -1,0 +1,259 @@
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Almost Kentico Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#sortable').dataTable();
+      $('.collapse').on('shown.bs.collapse', function(){
+          $(this).parent().parent().prev().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+        }).on('hide.bs.collapse', function(){
+          $(this).parent().parent().prev().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+    });
+    </script>
+
+    <style>
+    .hiddenRow {
+      padding: 0 !important;
+    }
+    </style>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="kentico.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Almost Kentico Bootstrap</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">List</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="autosavedform.html">Autosaved form</a></li>
+            <li><a href="table-pattern.html">Table pattern <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="col-md-10 col-md-offset-2 main">
+
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Medium<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th>Page visit: Landing page<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th>Form submission: Whitepaper - Development features<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th>File download: development-features.pdf<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th>Total conversion value <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="collapse" data-target=".demo1"></span></td>
+                  <td>Twitter</td>
+                  <td>200</td>
+                  <td>150</td>
+                  <td>100</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="hiddenRow">
+                      <div id="" class="demo1 collapse"></div>
+                  </td>
+                  <td colspan="5" class="hiddenRow">
+                      <div id="" class="demo1 collapse">tw01</div>
+                  </td>
+            </tr>
+            <tr>
+                <td><span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="collapse" data-target=".demo2"></span></td>
+                <td>Email</td>
+                <td>200</td>
+                <td>150</td>
+                <td>100</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+              <td colspan="1" class="hiddenRow">
+                  <div id="" class="demo2 collapse"></div>
+              </td>
+              <td colspan="5" class="hiddenRow">
+                  <div id="" class="demo2 collapse">email01</div>
+              </td>
+            </tr>
+            <tr>
+                <td><span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="collapse" data-target=".demo3"></span></td>
+                <td>Facebook</td>
+                <td>200</td>
+                <td>150</td>
+                <td>100</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+              <td colspan="1" class="hiddenRow">
+                  <div id="" class="demo3 collapse"></div>
+              </td>
+              <td colspan="5" class="hiddenRow">
+                  <div id="" class="demo3 collapse">fb01</div>
+              </td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="pagination">
+                  <ul class="pagination-list">
+                      <li>
+                          <a title="Previous page" href="#">
+                              <i aria-hidden="true" class="glyphicon glyphicon-chevron-left"></i>
+                              <span class="sr-only">Previous page</span>
+                          </a>
+                      </li>
+                      <li class="active">
+                          <span>1</span>
+                      </li>
+                      <li>
+                          <a href="#">2</a>
+                      </li>
+                      <li>
+                          <a href="#">3</a>
+                      </li>
+                      <li>
+                          <a href="#">4</a>
+                      </li>
+                      <li>
+                          <a href="#">5</a>
+                      </li>
+                      <li>
+                          <a href="#">&hellip;</a>
+                      </li>
+                      <li>
+                          <a title="Next page" href="#">
+                              <i aria-hidden="true" class="glyphicon glyphicon-chevron-right"></i>
+                              <span class="sr-only">Next page</span>
+                          </a>
+                      </li>
+                  </ul>
+
+                  <div class="pagination-pages">
+                      <label for="drpPage" id="lblPage">Page</label>
+                      <select class="form-control" id="drpPage" name="drpPage">
+                          <option value="1" selected="selected">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="2">4</option>
+                          <option value="3">5</option>
+                          <option value="2">6</option>
+                          <option value="3">7</option>
+                      </select>
+                      <span class="pages-max">of 7</span>
+                  </div>
+
+                  <div class="pagination-items-per-page">
+                      <label id="lblPageSize" for="drpPageSize" class="pagination-label">Items per page</label>
+                      <select id="drpPageSize" name="drpPageSize" class="form-control">
+                          <option value="10">10</option>
+                          <option value="25" selected="selected">25</option>
+                          <option value="50">50</option>
+                          <option value="-1">(all)</option>
+
+                      </select>
+                  </div>
+              </div>
+
+              <div class="alert alert-info col-md-3">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <strong>Sorting items</strong>
+                <ul>
+                  <li>Arrow indicates which and how the column is sorted.</li>
+                  <li>Default sorting is something that depends on usage of the grid component. (Not always first column.)</li>
+                  <li>To sort different column click its title. 1st click = Z-A and highest-lowest number. 2nd click = A-Z and lowest-highest number.</li>
+                  <li>See <a href="https://www.datatables.net/examples/styling/bootstrap.html">Data Tables</a> to try the desired interaction for sorting behavior.</li>
+                </ul>
+              </div>
+
+              <div class="alert alert-info col-md-3">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <strong>Items per page</strong>
+                <ul>
+                  <li>Appears once there are more than 10 items in the grid.</li>
+                  <li>Default number of items in the grid is something that depends on usage of the grid component.</li>
+                  <li>Options are 5, 10, 25, 50 and 100 or (all).</li>
+                  <li>If there are less than 100 items, the last option in the dropdown is (all). If there are more, the last option is 100.</li>
+                </ul>
+              </div>
+
+              <div class="alert alert-info col-md-3">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <strong>Paging</strong>
+                <ul>
+                  <li>Appears only when needed. Whether it's needed depends on "Items per page" option selected.</li>
+                  <li>The maximum number of pages shown in the paging is 5. In case there are more pages than 5, elipsis and page selector (dropdown) is displayed.</li>
+                </ul>
+              </div>
+
+              <div class="alert alert-info col-md-3">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <strong>Expanding rows</strong>
+                <ul>
+                  <li>Only one level can be expanded.</li>
+                  <li>The toggle is only the icon, not the row.</li>
+                </ul>
+              </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

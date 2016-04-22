@@ -1,0 +1,226 @@
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Almost Kentico Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $("#collapse-smarttip").click(function(){
+          $(".alert-smarttip").hide();
+          $("#collapsed-smarttip").show();
+          return false;
+        });
+    });
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="kentico.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Almost Kentico Bootstrap</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="index.html">Table</a></li>
+            <li class="active"><a href="form.html">Form<span class="sr-only">(current)</span></a></li>
+            <li><a href="autosavedform.html">Autosaved form</a></li>
+            <li><a href="table-pattern.html">Table pattern</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="col-md-10 col-md-offset-2 main">
+
+          <div class="alert alert-smarttip">
+            <h2 class="sub-header">
+              <span class="glyphicon glyphicon-sunglasses"></span>
+              Manually saved form
+            </h2>
+            <p>Manually saved forms are for settings and for creation of objects that need to keep editable.
+              <br><a id="collapse-smarttip" href="">Collapse hint</a></p>
+          </div>
+
+          <div id="collapsed-smarttip">
+            <span class="glyphicon glyphicon-sunglasses"></span>
+            <span>Show what are these settings good for.&nbsp;<a href="">Show more</a></span>
+          </div>
+
+        <button type="button" class="btn btn-primary">Save</button>
+
+          <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <span class="glyphicon glyphicon-ok-sign"></span>
+            <strong>Success!</strong> Indicates a successful or positive action.
+          </div>
+
+          <div class="alert alert-info">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <span class="glyphicon glyphicon-info-sign"></span>
+            <strong>Info!</strong> Indicates a neutral informative change or action.
+          </div>
+
+          <div class="alert alert-warning">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            <strong>Warning!</strong> Indicates a warning that might need attention.
+          </div>
+
+          <div class="alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <span class="glyphicon glyphicon-remove-sign"></span>
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+          </div>
+
+
+          <form role="form" class="form-horizontal">
+
+            <h3>General</h3>
+
+            <div class="form-group">
+              <label>Random setting that is pretty long:</label>
+              <div class="value-cell">
+                  <input type="text" class="form-control input-group inline-icons" aria-label="" value="Random setting">
+                  <div class="settings-info-group">
+                  <span class="info-icon"><i title="" class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" data-html="true" data-original-title="Default URL where newsletter unsubscription page is placed. If not specified, '~/CMSPages/Unsubscribe.aspx' is used."></i></span><span class="info-icon"><i title="" class="icon-exclamation-triangle warning-icon" data-html="true" data-original-title="Current site &amp;#39;Dancing Goat&amp;#39; does not inherit this global value, changing this setting won&amp;#39;t change current site behavior."></i></span>
+                  </div>
+                  <div class="settings-info-group">
+                  <span class="info-icon warning"><i title="" class="glyphicon glyphicon-exclamation-sign" data-toggle="tooltip" data-placement="right" data-html="true" data-original-title="Default URL where newsletter unsubscription page is placed. If not specified, '~/CMSPages/Unsubscribe.aspx' is used."></i></span><span class="info-icon"><i title="" class="icon-exclamation-triangle warning-icon" data-html="true" data-original-title="Current site &amp;#39;Dancing Goat&amp;#39; does not inherit this global value, changing this setting won&amp;#39;t change current site behavior."></i></span>
+                  </div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label>Random setting:</label>
+              <div class="value-cell">
+                  <input type="text" class="form-control input-group" aria-label="" value="Random important setting">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Random setting:</label>
+              <div class="value-cell">
+                <input type="text" class="form-control input-group" aria-label="" value="Random important setting">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label>Option 1:</label>
+            <div class="value-checkbox inline-icons">
+              <input type="checkbox" class="input-checkbox" value="">
+              <div class="settings-info-group">
+              <span class="info-icon"><i title="" class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" data-placement="right" data-original-title="Use tooltips in case you need to explain more or give hints."></i></span><span class="info-icon"><i title="" class="icon-exclamation-triangle warning-icon" data-html="true" data-original-title="Current site &amp;#39;Dancing Goat&amp;#39; does not inherit this global value, changing this setting won&amp;#39;t change current site behavior."></i></span>
+              </div>
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label>Option 2:</label>
+            <div class="value-checkbox">
+              <input type="checkbox" class="input-checkbox" value="">
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label>Option 3:</label>
+            <div class="value-checkbox disabled">
+              <input type="checkbox" class="input-checkbox" value="" disabled>
+            </div>
+            </div>
+
+
+            <div class="form-group">
+              <label>Random setting:</label>
+              <div class="value-cell">
+                  <input type="text" class="form-control input-group" aria-label="" value="Random important setting">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label>Random setting:</label>
+              <div class="value-cell">
+                <input type="text" class="form-control input-group" aria-label="" value="Random important setting">
+              </div>
+            </div>
+          </form>
+
+
+          <h3>Fill in additional stuff</h3>
+          <form class="horizontal-form">
+
+            <div class="form-group">
+              <label>Random setting:</label>
+              <input type="text" class="form-control input-group" aria-label="" value="sgerggr">
+            </div>
+
+            <div class="form-group">
+              <label>Radios:</label>
+              <div class="value-checkbox disabled">
+                <input type="radio" class="input-checkbox" value="" disabled><span>yes</span>
+                <input type="radio" class="input-checkbox" value="" disabled><span>no</span>
+              </div>
+            </div>
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+          <footer class="footer">
+            <p>&copy; 2015 Company, Inc.</p>
+          </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
