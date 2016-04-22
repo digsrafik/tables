@@ -9,8 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-        $('#sortable').dataTable();
-      $('.collapse').on('shown.bs.collapse', function(){
+      $('.collapse').on('show.bs.collapse', function(){
           $(this).parent().parent().prev().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
         }).on('hide.bs.collapse', function(){
           $(this).parent().parent().prev().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
