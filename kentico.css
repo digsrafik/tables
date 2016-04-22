@@ -221,11 +221,61 @@ body {
   color: #262524;
   border: 1px dashed #a3a2a2;
   z-index: 9949;
+  padding-bottom:0px;
+}
+
+.alert-smarttip h4{
+  color: #1175ae;
+}
+
+.smarttip-icon{
+  display:block;
+  float: left;
+  font-size: 32px;
+  color: #1175ae;
 }
 
 #collapsed-smarttip{
-  display:none;
+  display:inline-block;
   margin:10px 0;
+}
+
+.alert-smarttip .alert-label{
+  display: inline-block;
+  padding: 6px 8px 6px 10px;
+}
+
+.alert-label a,
+.alert-label a:link,
+.alert-label a:visited{
+  text-decoration: underline;
+  color: #337ab7;
+}
+
+
+.alert-label a:hover,
+.alert-label a:active{
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.coll {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.coll:focus, .coll:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
 }
 
 

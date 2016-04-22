@@ -9,10 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+        $("#collapsed-smarttip").hide();
+        //$('[data-toggle="tooltip"]').tooltip();
         $("#collapse-smarttip").click(function(){
-          $(".alert-smarttip").hide();
-          $("#collapsed-smarttip").show();
+          $(".alert-smarttip").fadeOut(600);
+          $("#collapsed-smarttip").delay(150).fadeIn(2500);
           return false;
         });
     });
@@ -76,21 +77,24 @@
         </div>
         <div class="col-md-10 col-md-offset-2 main">
 
-          <div class="alert alert-smarttip">
-            <h2 class="sub-header">
-              <span class="glyphicon glyphicon-sunglasses"></span>
-              Manually saved form
-            </h2>
-            <p>Manually saved forms are for settings and for creation of objects that need to keep editable.
-              <br><a id="collapse-smarttip" href="">Collapse hint</a></p>
-          </div>
-
-          <div id="collapsed-smarttip">
-            <span class="glyphicon glyphicon-sunglasses"></span>
-            <span>Show what are these settings good for.&nbsp;<a href="">Show more</a></span>
-          </div>
-
         <button type="button" class="btn btn-primary">Save</button>
+
+        <div id="collapsed-smarttip" class="inline">
+          <span class="glyphicon glyphicon-ice-lolly-tasted"></span>
+          <span>What's the purpose? Not sure how to? Not finding something expected to be here?&nbsp;<a href="">Show more</a></span>
+        </div>
+
+        <div class="alert alert-smarttip">
+            <span class="smarttip-icon glyphicon glyphicon-ice-lolly-tasted"></span>
+            <div class="alert-label">
+                <h4 class="sub-header">
+                    What's the purpose? Not sure how to? Not finding something expected to be here?
+                </h4>
+                <p>Read very brief explanation here. Learn about additional requirements of the task.<br>
+                  <a href="">Watch how you can do the task.</a><p>
+            </div>
+            <a href="#" id="collapse-smarttip" class="coll" data-dismiss="alert">^</a>
+        </div>
 
           <div class="alert alert-success">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

@@ -9,10 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+        $("#collapsed-smarttip").hide();
+        //$('[data-toggle="tooltip"]').tooltip();
         $("#collapse-smarttip").click(function(){
-          $(".alert-smarttip").hide();
-          $("#collapsed-smarttip").show();
+          $(".alert-smarttip").fadeOut(600);
+          $("#collapsed-smarttip").delay(150).fadeIn(2500);
           return false;
         });
     });
@@ -76,20 +77,6 @@
         </div>
         <div class="col-md-10 col-md-offset-2 main">
 
-          <div class="alert alert-smarttip">
-            <h2 class="sub-header">
-              <span class="glyphicon glyphicon-sunglasses"></span>
-              Autosaved form
-            </h2>
-            <p>The autosaved forms are for items you need to prepare for longer time, the process is tedious and you need to bake the final product in the end.
-              <br><a id="collapse-smarttip" href="">Collapse hint</a></p>
-          </div>
-
-          <div id="collapsed-smarttip">
-            <span class="glyphicon glyphicon-sunglasses"></span>
-            <span>Learn more about autosaved forms.&nbsp;<a href="">Show more</a></span>
-          </div>
-
           <form class="new-form main-form col-md-12">
             <div class="row">
               <div class="col-md-6">
@@ -115,6 +102,23 @@
           <h3>Append related objects</h3>
           <p class="section-info">This is what this application does and where you can get help about how to start in case you are completely clueless.</p>
           <button type="button" class="btn btn-default"> Add something</button>
+
+          <div id="collapsed-smarttip" class="inline">
+            <span class="glyphicon glyphicon-ice-lolly-tasted"></span>
+            <span>What's the purpose? Not sure how to? Not finding something expected to be here?&nbsp;<a href="">Show more</a></span>
+          </div>
+
+          <div class="alert alert-smarttip">
+              <span class="smarttip-icon glyphicon glyphicon-ice-lolly-tasted"></span>
+              <div class="alert-label">
+                  <h4 class="sub-header">
+                      What's the purpose? Not sure how to? Not finding something expected to be here?
+                  </h4>
+                  <p>Read very brief explanation here. Learn about additional requirements of the task.<br>
+                    <a href="">Watch how you can do the task.</a><p>
+              </div>
+              <a href="#" id="collapse-smarttip" class="coll" data-dismiss="alert">^</a>
+          </div>
 
           <h3>Append another related objects</h3>
           <p class="section-info">This is what this application does and where you can get help about how to start in case you are completely clueless.</p>
