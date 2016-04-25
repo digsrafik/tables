@@ -12,7 +12,7 @@
         $("#collapsed-smarttip").hide();
         //$('[data-toggle="tooltip"]').tooltip();
         $("#collapse-smarttip").click(function(){
-          $(".alert-smarttip").fadeOut(600);
+          $(".alert-smarttip").slideUp(600).fadeOut(600);
           $("#collapsed-smarttip").delay(150).fadeIn(2500);
           return false;
         });
@@ -109,6 +109,7 @@
           </div>
 
           <div class="alert alert-smarttip">
+              <a href="#" id="collapse-smarttip" class="coll" data-dismiss="alert" aria-label="close">^</a>
               <span class="smarttip-icon glyphicon glyphicon-ice-lolly-tasted"></span>
               <div class="alert-label">
                   <h4 class="sub-header">
@@ -117,7 +118,7 @@
                   <p>Read very brief explanation here. Learn about additional requirements of the task.<br>
                     <a href="">Watch how you can do the task.</a><p>
               </div>
-              <a href="#" id="collapse-smarttip" class="coll" data-dismiss="alert">^</a>
+
           </div>
 
           <h3>Append another related objects</h3>

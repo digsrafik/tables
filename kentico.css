@@ -376,13 +376,13 @@ h4{
 
 /*Tables*/
 th,
-.glyphicon-chevron-down,
-.glyphicon-chevron-up{
+table.glyphicon-chevron-down,
+table.glyphicon-chevron-up{
  cursor:pointer;
 }
 
-.glyphicon-chevron-down,
-.glyphicon-chevron-up{
+table.glyphicon-chevron-down,
+table.glyphicon-chevron-up{
  padding:.2em;
 }
 
