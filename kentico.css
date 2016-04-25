@@ -374,6 +374,18 @@ h4{
     box-shadow: #a3a2a2 0 -3px 0 inset;
 }
 
+/*Tables*/
+th,
+.glyphicon-chevron-down,
+.glyphicon-chevron-up{
+ cursor:pointer;
+}
+
+.glyphicon-chevron-down,
+.glyphicon-chevron-up{
+ padding:.2em;
+}
+
 
 /*Pagination*/
 .pagination{

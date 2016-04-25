@@ -10,9 +10,9 @@
     <script>
     $(document).ready(function(){
       $('.collapse').on('show.bs.collapse', function(){
-          $(this).parent().parent().prev().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+          $(this).parent().parent().prev().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
         }).on('hide.bs.collapse', function(){
-          $(this).parent().parent().prev().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+          $(this).parent().parent().prev().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
         });
     });
     </script>
@@ -86,17 +86,17 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>Medium<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
-                  <th class="text-right">Page visit: Landing page<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
-                  <th class="text-right">Form submission: Whitepaper - Development features<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
-                  <th class="text-right">File download: development-features.pdf<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
-                  <th>Some tag<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
-                  <th class="text-right">Total conversion value <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span></th>
+                  <th title="This is a short explanation of metric displayed in the column.">Medium<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th title="This is a short explanation of metric displayed in the column." class="text-right">Page visit: Landing page<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th title="This is a short explanation of metric displayed in the column." class="text-right">Form submission: Whitepaper - Development features<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th title="This is a short explanation of metric displayed in the column." class="text-right">File download: development-features.pdf<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th title="This is a short explanation of metric displayed in the column.">Some tag<span class="glyphicon glyphicon-sort-by-attributes-alt hidden" aria-hidden="true"></span></th>
+                  <th title="This is a short explanation of metric displayed in the column." class="text-right">Total conversion value <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="collapse" data-target=".demo1"></span></td>
+                  <td><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" data-toggle="collapse" data-target=".demo1"></span></td>
                   <td>Twitter</td>
                   <td class="text-right">200</td>
                   <td class="text-right">150</td>
@@ -113,7 +113,7 @@
                   </td>
             </tr>
             <tr>
-                <td><span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="collapse" data-target=".demo2"></span></td>
+                <td><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" data-toggle="collapse" data-target=".demo2"></span></td>
                 <td>Email</td>
                 <td class="text-right">200</td>
                 <td class="text-right">150</td>
@@ -130,7 +130,7 @@
               </td>
             </tr>
             <tr>
-                <td><span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="collapse" data-target=".demo3"></span></td>
+                <td><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" data-toggle="collapse" data-target=".demo3"></span></td>
                 <td>Facebook</td>
                 <td class="text-right">20</td>
                 <td class="text-right">15</td>
@@ -216,9 +216,10 @@
                 <strong>Sorting items</strong>
                 <ul>
                   <li>Arrow indicates which and how the column is sorted.</li>
+                  <li>On cursor hover column header shows a tooltip. The cursor displayed is pointer.</li>
                   <li>Default sorting is something that depends on usage of the grid component. (Not always first column.)</li>
-                  <li>To sort different column click its title. 1st click = Z-A and highest-lowest number. 2nd click = A-Z and lowest-highest number.</li>
-                  <li>See <a href="https://www.datatables.net/examples/styling/bootstrap.html">Data Tables</a> to try the desired interaction for sorting behavior.</li>
+                  <li>To sort different column click its title. How it is sorted depends on data in the column: COLUMN WITH TEXT: 1st click = A-Z. 2nd click = Z-A. COLUMN WITH NUMBER: 1st click = highest-lowest. 2nd click = lowest-highest.</li>
+                  <!--<li>See <a href="https://www.datatables.net/examples/styling/bootstrap.html">Data Tables</a> to try the desired interaction for sorting behavior.</li>-->
                 </ul>
               </div>
 
