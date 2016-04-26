@@ -59,7 +59,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-2 hidden-sm hidden-xs sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html">List</a></li>
             <li><a href="campaigns.html">Campaigns smarttip</a></li>
@@ -203,7 +203,25 @@
                   </div>
               </div>
 
-              <div class="alert alert-info col-md-3">
+              <div class="alert alert-info col-md-6">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <strong>Minimal table width is 560px</strong>
+                <ul>
+                  <li>Up to this point paging and items on page are next to each other.</li>
+                  <li>If header labels are too long, allow wrapping. If wrapped text has more than 3 lines, truncate it and add elipsis.</li>
+                  <li>If table content is too long (too many columns) allow scrolling and add property for the table to have first column fixed and scroll only the next columns.</li>
+                </ul>
+
+                <strong>Need narrower table?</strong>
+                <ul>
+                  <li>Use listing (up to 2 columns).</li>
+                  <li>In case you need more columns, use table and move place it to wider space.</li>
+                </ul>
+
+              </div>
+
+              <div class="alert alert-info col-md-6">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <span class="glyphicon glyphicon-info-sign"></span>
                 <strong>Sorting items</strong>
@@ -214,10 +232,7 @@
                   <li>To sort different column click its title. How it is sorted depends on data in the column: COLUMN WITH TEXT: 1st click = A-Z. 2nd click = Z-A. COLUMN WITH NUMBER: 1st click = highest-lowest. 2nd click = lowest-highest.</li>
                   <!--<li>See <a href="https://www.datatables.net/examples/styling/bootstrap.html">Data Tables</a> to try the desired interaction for sorting behavior.</li>-->
                 </ul>
-              </div>
 
-              <div class="alert alert-info col-md-3">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <span class="glyphicon glyphicon-info-sign"></span>
                 <strong>Items per page</strong>
                 <ul>
@@ -226,20 +241,12 @@
                   <li>Options are 5, 10, 25, 50 and 100 or (all).</li>
                   <li>If there are less than 100 items, the last option in the dropdown is (all). If there are more, the last option is 100.</li>
                 </ul>
-              </div>
-
-              <div class="alert alert-info col-md-3">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <span class="glyphicon glyphicon-info-sign"></span>
                 <strong>Paging</strong>
                 <ul>
                   <li>Appears only when needed. Whether it's needed depends on "Items per page" option selected.</li>
                   <li>The maximum number of pages shown in the paging is 5. In case there are more pages than 5, elipsis and page selector (dropdown) is displayed.</li>
                 </ul>
-              </div>
-
-              <div class="alert alert-info col-md-3">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <span class="glyphicon glyphicon-info-sign"></span>
                 <strong>Expanding rows</strong>
                 <ul>
@@ -253,6 +260,10 @@
                   <li>Text to the left.</li>
                 </ul>
               </div>
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
