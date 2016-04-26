@@ -12,8 +12,14 @@
         $("#collapsed-smarttip").hide();
         //$('[data-toggle="tooltip"]').tooltip();
         $("#collapse-smarttip").click(function(){
-          $(".alert-smarttip").slideUp(600).fadeOut(600);
-          $("#collapsed-smarttip").delay(150).fadeIn(2500);
+          $(".alert-smarttip").slideUp(250);
+          $("#collapsed-smarttip").delay(500).slideDown(250).fadeIn(500);
+          return false;
+        });
+
+        $("#collapsed-smarttip a").click(function(){
+          $("#collapsed-smarttip").slideUp(250);
+          $(".alert-smarttip").delay(500).slideDown(250).fadeIn(500);
           return false;
         });
     });
@@ -58,13 +64,13 @@
         <div class="col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li><a href="index.html">List</a></li>
-            <li><a href="campaigns.html">Campaigns smarttip</a></li>
+            <li class="active"><a href="campaigns.html">Campaigns smarttip<span class="sr-only">(current)</span></a></li>
             <li><a href="table-pattern.html">Table pattern</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="titles.html">Titles</a></li>
             <li><a href="form.html">Form</a></li>
-            <li class="active"><a href="autosavedform.html">Autosaved form <span class="sr-only">(current)</span></a></li>
+            <li><a href="autosavedform.html">Autosaved form</a></li>
           </ul>
         </div>
         <div class="col-md-10 col-md-offset-2 main">
@@ -92,12 +98,12 @@
           </form>
 
           <h3>Append related objects</h3>
-          <p class="section-info">This is what this application does and where you can get help about how to start in case you are completely clueless.</p>
-          <button type="button" class="btn btn-default"> Add something</button>
+          <p class="section-info">Add the emails that promote your campaign and draw traffic to your website. Links shared in your marketing channels should contain the utm_campaign, utm_source and utm_medium parameters for us to give you detailed report about campaign performance. Don't worry, for all the emails that you add here, we do that for you automatically.</p>
+          <button type="button" class="btn btn-default"> Add existing email</button> <button type="button" class="btn btn-default"> Add new email</button>
 
-          <div id="collapsed-smarttip" class="inline">
+          <div id="collapsed-smarttip" style="display:block">
             <span class="glyphicon glyphicon-ice-lolly-tasted"></span>
-            <span>What's the purpose? Not sure how to? Not finding something expected to be here?&nbsp;<a href="">Show more</a></span>
+            <span>Promoting campaigns by social media or PPC or any obscure channel?&nbsp;<a href="">Show more</a></span>
           </div>
 
           <div class="alert alert-smarttip">
@@ -105,17 +111,16 @@
               <span class="smarttip-icon glyphicon glyphicon-ice-lolly-tasted"></span>
               <div class="alert-label">
                   <h4 class="sub-header">
-                      What's the purpose? Not sure how to? Not finding something expected to be here?
+                      Promoting campaigns by social media or PPC or any obscure channel?
                   </h4>
-                  <p>Read very brief explanation here. Learn about additional requirements of the task.<br>
-                    <a href="">Watch how you can do the task.</a><p>
+                  <p>Configure other channels, such as Twitter, separately. Generate links with correct UTM parameters in Campaign content inventory section. See our <a href="">documentation</a> for more information.<p>
               </div>
 
           </div>
 
           <h3>Append another related objects</h3>
           <p class="section-info">This is what this application does and where you can get help about how to start in case you are completely clueless.</p>
-          <button type="button" class="btn btn-default"> Add something</button>
+            <button type="button" class="btn btn-default"> Add existing email</button> <button type="button" class="btn btn-default"> Add new email</button>
 
 
           <div class="table-responsive">
